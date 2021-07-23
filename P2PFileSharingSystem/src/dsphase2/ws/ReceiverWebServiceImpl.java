@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 
-package dsphase2;
+package dsphase2.ws;
 
+import dsphase2.entities.Config;
+import dsphase2.node.Node;
 import java.util.Observable;
 import javax.jws.WebService;
 

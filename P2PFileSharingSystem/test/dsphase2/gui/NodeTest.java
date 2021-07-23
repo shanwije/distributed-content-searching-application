@@ -2,9 +2,12 @@
  * CS4262 Distributed Systems Mini Project
  */
 
-package dsphase2;
+package dsphase2.gui;
 
-import static dsphase2.Network.configWindow;
+import dsphase2.entities.Config;
+import dsphase2.node.Node;
+import dsphase2.entities.RegisterResponse;
+import static dsphase2.gui.Network.configWindow;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dsphase2;
+package dsphase2.ws;
 
 import java.net.MalformedURLException;
 import java.net.URL;

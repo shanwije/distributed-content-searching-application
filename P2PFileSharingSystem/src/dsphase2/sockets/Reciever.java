@@ -1,8 +1,11 @@
 /*
  * CS4262 Distributed Systems Mini Project
  */
-package dsphase2;
+package dsphase2.sockets;
 
+import dsphase2.entities.Config;
+import dsphase2.node.Node;
+import dsphase2.entities.UDPResponse;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;

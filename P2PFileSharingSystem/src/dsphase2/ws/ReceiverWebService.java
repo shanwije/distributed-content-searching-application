@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package dsphase2;
+package dsphase2.ws;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

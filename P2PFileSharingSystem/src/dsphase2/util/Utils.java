@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package dsphase2;
+package dsphase2.util;
 
 
 public class Utils {

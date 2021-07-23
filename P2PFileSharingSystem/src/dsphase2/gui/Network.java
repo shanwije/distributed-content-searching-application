@@ -2,8 +2,10 @@
  * CS4262 Distributed Systems Mini Project
  */
 
-package dsphase2;
+package dsphase2.gui;
 
+import dsphase2.entities.Config;
+import dsphase2.gui.ConfigWindow;
 import javax.swing.UIManager;
 
 

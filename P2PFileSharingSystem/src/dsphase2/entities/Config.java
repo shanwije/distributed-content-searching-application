@@ -2,8 +2,9 @@
  * CS4262 Distributed Systems Mini Project
  */
 
-package dsphase2;
+package dsphase2.entities;
 
+import dsphase2.gui.ConfigWindow;
 import java.util.ArrayList;
 
 
@@ -23,27 +24,27 @@ public class Config {
     //static final String MY_NAME = "Sasikala";
     //static final boolean isSuper = false;
     
-    static ConfigWindow CONFIG_WINDOW; 
+    public static ConfigWindow CONFIG_WINDOW; 
     
-    static  String MY_IP = "127.0.0.1";
+    public static  String MY_IP = "127.0.0.1";
 
-    static  int MY_PORT = 500;
+    public static  int MY_PORT = 500;
 
-    static  String MY_NAME = "S";
-    static  boolean isSuper = false;
-    static boolean isWebService=false;
+    public static  String MY_NAME = "S";
+    public static  boolean isSuper = false;
+    public static boolean isWebService=false;
     
 
-    static  String BOOTSTRAP_IP = "127.0.0.1";
+    public static  String BOOTSTRAP_IP = "127.0.0.1";
 
-    static int noOfNodes = 1;
-    static int myNodeNumber = 0;
+    public static int noOfNodes = 1;
+    public static int myNodeNumber = 0;
     
-    static  int BOOTSTRAP_PORT =  9876;
+    public static  int BOOTSTRAP_PORT =  9876;
     static ArrayList<String> availableFiles = new ArrayList<>(); 
    
-    static int TTL = 10;
-    static int noOfPeersPreset = 8;
+    public static int TTL = 10;
+    public static int noOfPeersPreset = 8;
     
     public void addNewFile(String fileName){
         availableFiles.add(fileName); 
