@@ -1,7 +1,3 @@
-/*
- * CS4262 Distributed Systems Mini Project
- */
-
 package dsphase2.entities;
 
 import java.util.ArrayList;

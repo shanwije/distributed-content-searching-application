@@ -187,8 +187,8 @@ public class Node extends Observable implements Observer {
             String[] splitted = response.split(" ");
 
             String noOfNodes = splitted[2];
-            Config.myNodeNumber = Integer.parseInt(noOfNodes.trim());
-            Config.noOfNodes = Config.myNodeNumber + 1;
+            Config.currentNodeId = Integer.parseInt(noOfNodes.trim());
+            Config.nodeCount = Config.currentNodeId + 1;
 
             String[] peerIps;
             int[] peerPorts;
@@ -254,7 +254,7 @@ public class Node extends Observable implements Observer {
             reader = new BufferedReader(new FileReader(new File("src/resources/FileNames")));
             String readLine = null;
             int lineNumber = 0;
-            int ipRemainder = Config.myNodeNumber;
+            int ipRemainder = Config.currentNodeId;
             int[] twoRandomFiles = Utils.getRandomTwo(20);
             while ((readLine = reader.readLine()) != null) {
                 if (lineNumber % numberOfNodes == ipRemainder) {

@@ -1,33 +1,17 @@
 /*
  * CS4262 Distributed Systems Mini Project
  */
-
 package dsphase2.gui;
 
 import dsphase2.entities.Config;
-import dsphase2.gui.ConfigWindow;
 import javax.swing.UIManager;
 
+public class Network {
 
 
-public class Network implements Runnable {
-
-        
-    static ConfigWindow configWindow;
-    @Override
-    public void run() {
-                 //When configured as normal node
-             Config.CONFIG_WINDOW = configWindow; 
-//           Node n1 = Node.getInstance(Config.MY_IP,Config.MY_PORT,Config.MY_NAME);
-//            n1.start();
-            //Thread.sleep(2000);
-          //  n1.search("Windows");
-    }
-    
     public static void main(String[] args) {
-        
-    
-                /* Create and display the form */
+
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
@@ -36,16 +20,10 @@ public class Network implements Runnable {
                             UIManager.getSystemLookAndFeelClassName());
                 } catch (Exception e) {
                 }
-                ConfigWindow configWindow = new ConfigWindow();
-                Config.CONFIG_WINDOW = configWindow; 
+                ConfigGUI configWindow = new ConfigGUI();
+                Config.CONFIG_WINDOW = configWindow;
                 configWindow.setVisible(true);
-            }     
+            }
         });
-
-//            Node n1 = Node.getInstance(Config.MY_IP,Config.MY_PORT,Config.MY_NAME);
-//            n1.start();
-//            //Thread.sleep(2000);
-//          //  n1.search("Windows");
-        
     }
 }
