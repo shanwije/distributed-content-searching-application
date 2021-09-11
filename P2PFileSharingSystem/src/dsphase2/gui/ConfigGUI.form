@@ -73,13 +73,6 @@
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Client Config&#xa;">
-              <Value PropertyName="innerBorder" id=""/>
-            </TitledBorder>
-          </Border>
-        </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
         <Property name="name" type="java.lang.String" value="hh" noResource="true"/>
       </Properties>
@@ -97,14 +90,14 @@
                               <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="txtUsername" min="-2" pref="241" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="txtMyIP" min="-2" pref="187" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txtMyPort" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtMyPort" max="32767" attributes="0"/>
                               </Group>
                               <Component id="jScrollPane1" min="-2" pref="349" max="-2" attributes="0"/>
                           </Group>
@@ -183,7 +176,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtMyPort">
           <Properties>
-            <Property name="text" type="java.lang.String" value="500"/>
+            <Property name="text" type="java.lang.String" value="9876"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
@@ -296,7 +289,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtBootstrapPort">
           <Properties>
-            <Property name="text" type="java.lang.String" value="9876"/>
+            <Property name="text" type="java.lang.String" value="55555"/>
           </Properties>
         </Component>
       </SubComponents>
