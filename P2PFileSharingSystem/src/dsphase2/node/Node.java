@@ -63,7 +63,7 @@ public class Node extends Observable implements Observer {
         return instance;
     }
 
-    private Node(String ip, int port, String name) {
+    public Node(String ip, int port, String name) {
         this.myIp = ip;
         this.myPort = port;
         this.myName = name;

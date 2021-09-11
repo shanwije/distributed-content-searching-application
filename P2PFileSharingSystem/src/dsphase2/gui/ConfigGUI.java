@@ -111,7 +111,6 @@ public class ConfigGUI extends javax.swing.JFrame implements Observer {
 
         jLabel1.setText("Distributed File Sharing");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Client Config\n"));
         jPanel1.setToolTipText("");
         jPanel1.setName("hh"); // NOI18N
 
@@ -131,7 +130,7 @@ public class ConfigGUI extends javax.swing.JFrame implements Observer {
 
         txtUsername.setText("defaultUser");
 
-        txtMyPort.setText("500");
+        txtMyPort.setText("9876");
 
         jLabel5.setText("Files");
 
@@ -166,14 +165,14 @@ public class ConfigGUI extends javax.swing.JFrame implements Observer {
                             .addComponent(jLabel3)
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtMyIP, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtMyPort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtMyPort))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(radioIsSuper)
@@ -218,7 +217,7 @@ public class ConfigGUI extends javax.swing.JFrame implements Observer {
 
         jLabel7.setText("port");
 
-        txtBootstrapPort.setText("9876");
+        txtBootstrapPort.setText("55555");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -410,6 +409,7 @@ public class ConfigGUI extends javax.swing.JFrame implements Observer {
         if (!radioIsSocket.isSelected()) {
             Config.isWebService = true;
         }
+//        n1 = new Node(Config.MY_IP, Config.MY_PORT, Config.MY_NAME);
         n1 = Node.getInstance(Config.MY_IP, Config.MY_PORT, Config.MY_NAME);
         n1.start();
 
